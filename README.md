@@ -9,6 +9,6 @@
 ### Tips and Tricks
 #### Create an Application
 * Recommended OAuthRedirect URI: https://testapi-rbi-merlin.apiconnect.ibmcloud.com/development/sb/forms-application/process-access-token
-* On Certificate fiels you should put the content of [devhacks.crt](devhacks.crt)
+* On Certificate fiels you should put the content of [devhacks.crt](devhacks.crt) (from `-----BEGIN CERTIFICATE-----` until `-----END CERTIFICATE-----`)
 #### Use APIs
 * You should subscribe to OAuth2 API, Accounts API and Payments API
