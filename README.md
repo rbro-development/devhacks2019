@@ -1,4 +1,4 @@
-# ![DevHacks 2019](https://api.myconnector.ro/files/events/logo/175/529e3c2db8e94cfa68c5e73ece5f4591.png)
+![DevHacks 2019](https://api.myconnector.ro/files/events/logo/175/529e3c2db8e94cfa68c5e73ece5f4591.png)
 ---
 ## Challenge: Future in Banking
 ### Raiffeisen Bank OpenBanking API Details
