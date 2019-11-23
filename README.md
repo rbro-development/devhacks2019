@@ -12,5 +12,6 @@
 * On Certificate fiels you should put the content of [devhacks.crt](devhacks.crt) (from `-----BEGIN CERTIFICATE-----` until `-----END CERTIFICATE-----`)
 #### Use APIs
 * You should subscribe to OAuth2 API, Accounts API and Payments API
+* mTLS Java Sample: https://gist.github.com/smijar/c78ec615073d4b95836814f246b0a733
 #### Test Data
 * Test Data could be found here: https://developer-test.raiffeisen.ro/pisp_test_data
