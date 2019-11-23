@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "a007fcdc-ba1f-41a5-bb05-70fe27485232",
+		"name": "DevHacks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01. Create Consent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "PSU-ID",
+						"value": "9999999997",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "f229d0ca-f444-4a75-98c4-b8975a254d46",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "944dd01a-bf16-4efe-bfeb-746de9eb9730",
+						"type": "text"
+					},
+					{
+						"key": "X-Client-Certificate",
+						"value": "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",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/merlin-p/uat02/v1/psd2-sandbox-consent-api/consents/c863c344-4ca4-43ff-aa78-9710f5da82e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"access\": {\n    \"accounts\": [\n      \n      {\n        \"iban\": \"RO23RZBR0000069999999930\",\n        \"currency\": \"EUR\"\n      },\n      {\n        \"iban\": \"RO10RZBR0000069999999970\",\n        \"currency\": \"RON\"\n      },\n      {\n        \"iban\": \"RO31RZBR0000069999999980\",\n        \"currency\": \"RON\"\n      }\n    ],\n    \"balances\": [\n     \n      {\n        \"iban\": \"RO23RZBR0000069999999930\",\n        \"currency\": \"EUR\"\n      },\n      {\n        \"iban\": \"RO10RZBR0000069999999970\",\n        \"currency\": \"RON\"\n      },\n      {\n        \"iban\": \"RO31RZBR0000069999999980\",\n        \"currency\": \"RON\"\n      }\n    ],\n    \"transactions\": [\n      \n      {\n        \"iban\": \"RO23RZBR0000069999999930\",\n        \"currency\": \"EUR\"\n      },\n      {\n        \"iban\": \"RO10RZBR0000069999999970\",\n        \"currency\": \"RON\"\n      },\n      {\n        \"iban\": \"RO31RZBR0000069999999980\",\n        \"currency\": \"RON\"\n      }\n    ]\n  },\n  \"recurringIndicator\": true,\n  \"validUntil\": \"2020-04-24\",\n  \"frequencyPerDay\": 4,\n  \"combinedServiceIndicator\": false\n}"
+				},
+				"url": {
+					"raw": "https://api-test.raiffeisen.ro/v1/psd2-bgs-consent-api/v1/consents",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"raiffeisen",
+						"ro"
+					],
+					"path": [
+						"v1",
+						"psd2-bgs-consent-api",
+						"v1",
+						"consents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02. Auth Consent - in browser - max 5 min",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "PSU-ID",
+						"type": "text",
+						"value": "9999999997",
+						"disabled": true
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"type": "text",
+						"value": "f229d0ca-f444-4a75-98c4-b8975a254d46",
+						"disabled": true
+					},
+					{
+						"key": "X-Request-ID",
+						"type": "text",
+						"value": "944dd01a-bf16-4efe-bfeb-746de9eb9730",
+						"disabled": true
+					},
+					{
+						"key": "X-Client-Certificate",
+						"type": "text",
+						"value": "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",
+						"disabled": true
+					},
+					{
+						"key": "Cache-Control",
+						"type": "text",
+						"value": "no-cache",
+						"disabled": true
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"type": "text",
+						"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/merlin-p/uat02/v1/psd2-sandbox-consent-api/consents/c863c344-4ca4-43ff-aa78-9710f5da82e",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-auth-test.raiffeisen.ro/psd2-rbro-oauth2-api/oauth2/authorize?response_type=code&scope=AISP&redirect_uri=https://testapi-rbi-merlin.apiconnect.ibmcloud.com/development/sb/forms-application/process-access-token&consentId=3a68829a-a3d6-4061-9c01-1e17614d69b5&client_id=f229d0ca-f444-4a75-98c4-b8975a254d46",
+					"protocol": "https",
+					"host": [
+						"api-auth-test",
+						"raiffeisen",
+						"ro"
+					],
+					"path": [
+						"psd2-rbro-oauth2-api",
+						"oauth2",
+						"authorize"
+					],
+					"query": [
+						{
+							"key": "response_type",
+							"value": "code"
+						},
+						{
+							"key": "scope",
+							"value": "AISP"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/development/sb/forms-application/process-access-token"
+						},
+						{
+							"key": "consentId",
+							"value": "3a68829a-a3d6-4061-9c01-1e17614d69b5"
+						},
+						{
+							"key": "client_id",
+							"value": "f229d0ca-f444-4a75-98c4-b8975a254d46"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03. access_token and refresh_token from code",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "PSU-ID",
+						"type": "text",
+						"value": "9999999997"
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"type": "text",
+						"value": "f229d0ca-f444-4a75-98c4-b8975a254d46"
+					},
+					{
+						"key": "X-Request-ID",
+						"type": "text",
+						"value": "944dd01a-bf16-4efe-bfeb-746de9eb9730"
+					},
+					{
+						"key": "X-Client-Certificate",
+						"type": "text",
+						"value": "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"
+					},
+					{
+						"key": "Cache-Control",
+						"type": "text",
+						"value": "no-cache"
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"type": "text",
+						"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/merlin-p/uat02/v1/psd2-sandbox-consent-api/consents/c863c344-4ca4-43ff-aa78-9710f5da82e"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "f229d0ca-f444-4a75-98c4-b8975a254d46",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "uR2oU3tT4pU0eV7wA6uN0gM6fE3oN7oD0wL3rB5tR5jQ0qC7uF",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "AALo46Il1nm5vbb54OAcGtcXAJ4nMo4HLvpZIZAiRQ4sQhyQR2w6myyCq7nL6eb-03ConubKp9QtM9RzwTZLeHB__B-zCoB9QN53-EXgeBFPagDhGlSXCII0FYwmBwPMdhO39qT_22nVWMaqQvLPUzk46xdFOTX5e2w4f8VrPFFFXUa2NXxLJzy9zgwA9qonrE0guVLeKCnWmVO665BP-Tdj",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/development/sb/forms-application/process-access-token",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "AISP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api-auth-test.raiffeisen.ro/psd2-rbro-oauth2-api/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"api-auth-test",
+						"raiffeisen",
+						"ro"
+					],
+					"path": [
+						"psd2-rbro-oauth2-api",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03. access_token from refresh_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "PSU-ID",
+						"type": "text",
+						"value": "9999999997"
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"type": "text",
+						"value": "f229d0ca-f444-4a75-98c4-b8975a254d46"
+					},
+					{
+						"key": "X-Request-ID",
+						"type": "text",
+						"value": "944dd01a-bf16-4efe-bfeb-746de9eb9730"
+					},
+					{
+						"key": "X-Client-Certificate",
+						"type": "text",
+						"value": "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"
+					},
+					{
+						"key": "Cache-Control",
+						"type": "text",
+						"value": "no-cache"
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"type": "text",
+						"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/merlin-p/uat02/v1/psd2-sandbox-consent-api/consents/c863c344-4ca4-43ff-aa78-9710f5da82e"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "f229d0ca-f444-4a75-98c4-b8975a254d46",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "uR2oU3tT4pU0eV7wA6uN0gM6fE3oN7oD0wL3rB5tR5jQ0qC7uF",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "AAKn5A1_gFPqLkl-EoxrHvyPY3wx--79QkRvfpPO96EpR9piHAqqpu31HLwIeY2yQsgLIJr6rTmUdWxHozV4xXhQIJsLIS3sKKG06Vjm0ZLD5rcrT3WXQH24K3No6UC_jcS1OwXn9MynrbBPZKPJUJeCxvn3ULyjUbUOis0lPeUyJgUAnDMaNiQ64NkIYmiq1-CKmc8PwQ2CxEIFk05hQv4P",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://testapi-rbi-merlin.apiconnect.ibmcloud.com/development/sb/forms-application/process-access-token",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "AISP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api-auth-test.raiffeisen.ro/psd2-rbro-oauth2-api/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"api-auth-test",
+						"raiffeisen",
+						"ro"
+					],
+					"path": [
+						"psd2-rbro-oauth2-api",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04. Get Accounts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer AAIkZjIyOWQwY2EtZjQ0NC00YTc1LTk4YzQtYjg5NzVhMjU0ZDQ2FL3FT17mPrVjQkFU1pyg3gmeM_lbToUJD_3tZh6p_Pp_0EA_ffy16-V7zG40nIZq-TT_ZoFTXmsPkoSh0lb24jxhm968C9OyqYII5fxX9wJKCUWp_a7NEohm4lH-8O9WUMaS-3zeHCwrOCfrw7jFLT8whPQNOQ9W9IfNrZv7tGJMe8uqiYdxdJhXCXoZwMVi",
+						"type": "text"
+					},
+					{
+						"key": "consent-id",
+						"value": "3a68829a-a3d6-4061-9c01-1e17614d69b5",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "944dd01a-bf16-4efe-bfeb-746de9eb9730",
+						"type": "text"
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "f229d0ca-f444-4a75-98c4-b8975a254d46",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-test.raiffeisen.ro/v1/psd2-accounts-api-1.3.2/accounts?withBalance=true",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"raiffeisen",
+						"ro"
+					],
+					"path": [
+						"v1",
+						"psd2-accounts-api-1.3.2",
+						"accounts"
+					],
+					"query": [
+						{
+							"key": "withBalance",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
